@@ -3,7 +3,7 @@ name: push to swarm
 on:
   push:
     branches:
-      - master
+      - main
       - development
 env:
   NEXT_PUBLIC_NAME: 'Fairdrive'
@@ -23,7 +23,7 @@ jobs:
       - name: set vars per branch
         id: vars
         run: |
-          if [ "$GITHUB_REF_NAME" == 'master' ]; then
+          if [ "$GITHUB_REF_NAME" == 'main' ]; then
               echo "PURGE_URL=https://fairdrive.fairdatasociety.org" >> "$GITHUB_ENV"
               echo "SWARM_URL=https://gateway.fairdatasociety.org/proxy/" >> "$GITHUB_ENV"
               echo "SIGNER=SIGNER_$GITHUB_REF_NAME" >> "$GITHUB_ENV"
@@ -93,4 +93,4 @@ jobs:
         env:
           TOKEN: '${{ secrets.purge_token }}'
         run: |
-          curl -s ${{ env.PURGE_URL }}/deploy/purge?token=${{ secrets.purge_token }} -H "site: fairdrive${{ env.DEPLOYMENT }}fairdatasociety.org" -H "uri: "
+          curl -s ${{ env.PURGE_URL }}/deploy/purge?token=${{ secrets.purge_token }} -H "site: fairdrive${{ env.DEPLOYMENT }}fairdatasociety.org" -H "uri: apps/opfs/"
