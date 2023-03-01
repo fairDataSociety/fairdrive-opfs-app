@@ -1,0 +1,58 @@
+{
+  "name": "@fairdatasociety/fairdrive-opfs-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fairdatasociety/fairdrive-opfs": "^0.1.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/lab": "^5.0.0-alpha.117",
+    "@mui/material": "^5.11.6",
+    "@react-spring/web": "^9.6.1",
+    "@types/filesystem": "^0.0.32",
+    "@types/node": "^18.11.9",
+    "browser-fs-access": "^0.31.1",
+    "buffer": "^6.0.3",
+    "chonky": "^2.3.2",
+    "chonky-icon-fontawesome": "^2.3.2",
+    "graceful-fs": "^4.2.10",
+    "https-browserify": "^1.0.0",
+    "material-ui-popup-state": "^5.0.4",
+    "native-file-system-adapter": "^3.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-scripts": "5.0.1",
+    "react-spring": "^9.6.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "timers-browserify": "^2.0.12",
+    "url": "^0.11.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browserify-fs": "^1.0.0",
+    "postcss": "^8.4.19",
+    "react-app-rewired": "^2.2.1"
+  }
+}
