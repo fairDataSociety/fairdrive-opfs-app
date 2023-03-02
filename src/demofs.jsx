@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { showOpenFilePicker } from 'native-file-system-adapter'
 import { useCallback } from 'react'
@@ -334,7 +334,7 @@ export const DemoFSBrowser = ({ id, name }) => {
     )
 
   return (
-    <HashRouter>
+    <BrowserRouter basename='/apps/opfs'>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2} columns={12}>
         <Grid xs={6}>
@@ -689,6 +689,6 @@ export const DemoFSBrowser = ({ id, name }) => {
         </DialogActions>
       </Dialog>
     </Box>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
