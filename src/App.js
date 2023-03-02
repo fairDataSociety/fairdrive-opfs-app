@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/apps/opfs">
+    <BrowserRouter>
       <div className="App" style={{ display: "flex" }}>
         <DemoFSBrowser name={"DemoFS"} id="DemoFS" />
       </div>
