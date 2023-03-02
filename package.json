@@ -2,7 +2,7 @@
   "name": "@fairdatasociety/fairdrive-opfs-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./apps/opfs",
+  "homepage": "./apps/opfs/",
   "dependencies": {
     "@fairdatasociety/fairdrive-opfs": "^0.1.6",
     "@mui/icons-material": "^5.11.0",
