@@ -35,10 +35,10 @@ You will need the provider name and mount destination. Eg mount: `root` and prov
 
 ## Known issues
 
-- S3: client or API `ListBuckets` sometimes won't work until all CORS and SSL configuration are correctly set.
-- S3: Invalid password or secret key returns as a CORS error. Be sure to double check your keys.
-- Fairos: Pod won't open correctly. This sometimes happens if network is slow, the `podOpen` might take sometime before the pod can be query properly.
-- UI: Delete requires a refresh to display recently removed files
+- `S3`: client or API `ListBuckets` sometimes won't work until all CORS and SSL configuration are correctly set.
+- `S3`: Invalid password or secret key returns as a CORS error. Be sure to double check your keys.
+- `Fairos`: Pod won't open correctly. This sometimes happens if network is slow, the `podOpen` might take sometime before the pod can be query properly.
+- `UI`: Delete requires a refresh to display recently removed files
 
 ## License
 
