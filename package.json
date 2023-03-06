@@ -2,6 +2,7 @@
   "name": "@fairdatasociety/fairdrive-opfs-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@fairdatasociety/fairdrive-opfs": "^0.1.6",
     "@mui/icons-material": "^5.11.0",
@@ -24,6 +25,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
+    "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "react-spring": "^9.6.1",
     "stream-browserify": "^3.0.0",
